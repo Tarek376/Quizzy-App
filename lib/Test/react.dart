@@ -40,7 +40,6 @@ class _ReactState extends State<React> {
       questionIndex++;
       selectedAnswerIndex = null;
     } else {
-      // You may shuffle the questions again for a new round
       shuffledQuestions.shuffle();
       questionIndex = 0;
     }

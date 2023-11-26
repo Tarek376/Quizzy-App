@@ -10,24 +10,23 @@ import 'Test/laravel.dart';
 class Test extends StatelessWidget {
   final String buttonText;
 
-  const Test({ required this.buttonText, super.key});
+  const Test({required this.buttonText, Key? key}) : super(key: key);
 
   Widget buildQuizContent(BuildContext context) {
-    switch  (buttonText) {
-      case 'PYTHON':
-        return const Python();
-      case 'FLUTTER':
-        return const Flutter();
-      case 'JAVA':
-        return const Java();
-      case 'REACT':
-        return const React();
-      case 'C':
-        return const C();
-      case 'LARAVEL':
-        return const Laravel();
-      default:
-        return const Text('Unknown quiz');
+    if (buttonText == 'PYTHON') {
+      return const Python();
+    } else if (buttonText == 'FLUTTER') {
+      return const Flutter();
+    } else if (buttonText == 'JAVA') {
+      return const Java();
+    } else if (buttonText == 'REACT') {
+      return const React();
+    } else if (buttonText == 'C') {
+      return const C();
+    } else if (buttonText == 'LARAVEL') {
+      return const Laravel();
+    } else {
+      return const Text('Unknown quiz');
     }
   }
 
@@ -35,8 +34,7 @@ class Test extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(194, 173, 170, 196),
-
-       body: buildQuizContent(context),
+      body: buildQuizContent(context),
     );
   }
 }

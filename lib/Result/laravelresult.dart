@@ -32,17 +32,17 @@ class CResult extends StatelessWidget {
   width: 150,
  child: ElevatedButton(
   onPressed: () {
-    Navigator.of(context).pop(); // First pop
-    Navigator.of(context).pop(); // Second pop
+    Navigator.of(context).pop(); 
+    Navigator.of(context).pop(); 
   },
   style: ElevatedButton.styleFrom(
-    primary: const Color.fromRGBO(145, 139, 188, 0.9), // Background color
-    onPrimary: Colors.white, // Text color
+    primary: const Color.fromRGBO(145, 139, 188, 0.9),
+    onPrimary: Colors.white,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(20),
     ),
     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-    elevation: 3, // Elevation (shadow)
+    elevation: 3,
   ),
   child: const Text(
     'Go to Home',

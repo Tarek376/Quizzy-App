@@ -84,7 +84,6 @@ class MyHome extends StatelessWidget {
     );
   }
 
-  // Function to build a row of buttons
   Widget buildButtonRow(
     BuildContext context,
     String text1,
@@ -101,7 +100,6 @@ class MyHome extends StatelessWidget {
     );
   }
 
-  // Function to build an individual button
   Widget buildButton(BuildContext context, String text, String imageUrl) {
     return SizedBox(
       width: 150,

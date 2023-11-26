@@ -40,7 +40,7 @@ late List<Question> shuffledQuestions;
       questionIndex++;
       selectedAnswerIndex = null;
     } else {
-      // You may shuffle the questions again for a new round
+      
       shuffledQuestions.shuffle();
       questionIndex = 0;
     }
