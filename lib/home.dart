@@ -17,7 +17,7 @@ class MyHome extends StatelessWidget {
           title: Center(
             child: Column(
               children: [
-                Text(
+                const Text(
                   'WELCOME,',
                   style: TextStyle(
                     fontSize: 18,
@@ -49,7 +49,7 @@ class MyHome extends StatelessWidget {
            SingleChildScrollView(
                child: Column(
                 children: <Widget>[
-            SizedBox(height: 75),
+            const SizedBox(height: 75),
             buildButtonRow(
               context,
               'PYTHON',
@@ -57,7 +57,7 @@ class MyHome extends StatelessWidget {
               'FLUTTER',
               'https://th.bing.com/th?id=OIP.ox-UQyCkoOdgYQndq8Yf4QHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2',
             ),
-            SizedBox(height: 75),
+           const SizedBox(height: 75),
             buildButtonRow(
               context,
               'JAVA',
@@ -65,7 +65,7 @@ class MyHome extends StatelessWidget {
               'REACT',
               'https://th.bing.com/th?id=OIP.-BpvNzwkSx9w9LdAK1qzcgHaGo&w=264&h=236&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2',
             ),
-            SizedBox(height: 75),
+            const SizedBox(height: 75),
             buildButtonRow(
               context,
               'C',

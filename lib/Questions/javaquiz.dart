@@ -22,8 +22,8 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: ' What is the output of the following code snippet in Java?\n\nString str = "Hello";\nSystem.out.println(str.length());',
-    correctAnswer: 0,
+    question: ' What is the output of the following code snippet in Java?\n\nString str = "World!";\nSystem.out.println(str.length());',
+    correctAnswer: 1,
     options: [
       'a) 5',
       'b) 6',
@@ -58,14 +58,14 @@ Question(
       'public class Example {\n'
       '  public static void main(String[] args) {\n'
       '    int x = 5;\n'
-      '    System.out.println("Value of x: " + x);\n'
+      '    System.out.println("Value of x: " + (x+1));\n'
       '  }\n'
       '}\n'
       '```\n',
-  correctAnswer: 2,
+  correctAnswer: 0,
   options: [
     'a) Value of x: 6',
-    'b) Value of x: 4',
+    'b) Value of x: 51',
     'c) Value of x: 5',
     'd) Compile Error',
   ],
@@ -128,7 +128,7 @@ Question(
       '  public static void main(String[] args) {\n'
       '    String[] names = {"Alice", "Bob", "Charlie"};\n'
       '    for (String name : names) {\n'
-      '      System.out.println(name);\n'
+      '      System.out.print(name +" ");\n'
       '    }\n'
       '  }\n'
       '}\n'
@@ -137,7 +137,7 @@ Question(
   options: [
     'a) Bob',
     'b) Alice Charlie',
-    'c) Alice\n   Bob\n   Charlie',
+    'c) Alice Bob Charlie',
     'd) Compile Error',
   ],
 ),
